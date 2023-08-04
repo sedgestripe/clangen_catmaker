@@ -39,8 +39,8 @@ class CreationScreen(base_screens.Screens):
     def handle_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.done:
-                return
-                self.change_screen('detail screen')
+                
+                print(Cat.generate_save_file(global_vars.CREATED_CAT))
             elif event.ui_element == self.general_tab_button:
                 self.show_tab(self.general_tab)
                 self.handle_page_switching(0)

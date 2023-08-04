@@ -160,6 +160,24 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
                 new_sprite.blit(sprites.sprites['acc_wild' + cat.pelt.accessory + cat_sprite], (0, 0))
             elif cat.pelt.accessory in cat.pelt.collars:
                 new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.flower_accessories:
+                new_sprite.blit(sprites.sprites['acc_flower' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.plant2_accessories:
+                new_sprite.blit(sprites.sprites['acc_plant2' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.snake_accessories:
+                new_sprite.blit(sprites.sprites['acc_snake' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.smallAnimal_accessories:
+                new_sprite.blit(sprites.sprites['acc_smallAnimal' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.deadInsect_accessories:
+                new_sprite.blit(sprites.sprites['acc_deadInsect' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.aliveInsect_accessories:
+                new_sprite.blit(sprites.sprites['acc_aliveInsect' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.fruit_accessories:
+                new_sprite.blit(sprites.sprites['acc_fruit' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.crafted_accessories:
+                new_sprite.blit(sprites.sprites['acc_crafted' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.tail2_accessories:
+                new_sprite.blit(sprites.sprites['acc_tail2' + cat.pelt.accessory + cat_sprite], (0, 0))
 
         # Apply fading fog
         if cat.pelt.opacity <= 97 and not cat.prevent_fading and game.settings["fading"] and dead:

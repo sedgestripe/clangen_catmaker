@@ -156,6 +156,7 @@ accessories = bidict({None: "None", "MAPLE LEAF": "Maple Leaf", "HOLLY": "Holly"
                       "SPIKESNYLON": "Spiked Nylon Collar", "WHITENYLON": "White Nylon Collar",
                       "PINKNYLON": "Pink Nylon Collar", "PURPLENYLON": "Purple Nylon Collar",
                       "MULTINYLON": "Mulicolored Nylon Collar", "INDIGONYLON": "Indigo Nylon Collar"})
+
 accessories = sort_bidict(accessories, None)
 
 platforms = {"None": None,
